@@ -24,4 +24,22 @@ if response.status_code == 200:
         heading_text = heading.text.strip()
 
         # get the next paragraph after each heading
-        next_
+        next_paragraph = heading.find_next('p')
+
+        # store heading and content
+        headings.append(heading_text)
+        if next_paragraph:
+            content.append(next_paragraph.text.strip())
+        else:
+            content.append("") # In case there's no paragraph after the heading
+
+    # create a DataFrame from the lists
+    df = pd.DataFrame({'heading': heading, 'Content': content})
+
+    # write the DataFrame to an Execel file
+    df.to_excel("csvToExcel.xlsx", sheet_name="Headings and Content", index= False)
+
+    print("Data successfully written to 'web_data.xlsx'")
+
+else:
+    print("Error")
