@@ -34,7 +34,7 @@ if response.status_code == 200:
             content.append("") # In case there's no paragraph after the heading
 
     # create a DataFrame from the lists
-    df = pd.DataFrame({'heading': heading, 'Content': content})
+    df = pd.DataFrame({'heading': headings, 'Content': content})
 
     # write the DataFrame to an Execel file
     df.to_excel("csvToExcel.xlsx", sheet_name="Headings and Content", index= False)
