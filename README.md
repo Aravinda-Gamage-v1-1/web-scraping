@@ -15,6 +15,11 @@ Beautiful Soup automatically converts incoming records to Unicode and outgoing f
 
 ``` pip install beautifulsoup4 ```
 
+### Pandas Library
+Pandas is a Python library used for working with data sets. It has functions for analyzing, cleaning, exploring, and manipulating data. Pandas allows us to analyze big data and make conclusions based on statistical theories. Pandas can clean messy data sets, and make them readable and relevant. Relevant data is very important in data science.
+
+``` pip install pandas ```
+
 ### Selenium
 Selenium is a popular Python module used for automating web browsers. It allows developers to control web browsers programmatically, enabling tasks such as web scraping, automated testing, and web application interaction. Selenium supports various web browsers, including Chrome, Firefox, Safari, and Edge, making it a versatile tool for browser automation.
 
